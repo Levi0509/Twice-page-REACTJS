@@ -1,0 +1,76 @@
+.images {
+  background-color: white;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+.images > h1 {
+  position: relative;
+  top: 4vh;
+  margin-top: 9vh;
+  margin-bottom: 15vh;
+  font-size: 2.5rem;
+  font-family: "Zen Loop", cursive;
+  letter-spacing: 6px;
+}
+
+.singleImage {
+  padding: 10px 20px 20px;
+  width: 80vw;
+  border-radius: 5vh 0 5vh;
+}
+
+.popupParent {
+  transition: all 0.5s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  position: fixed;
+  width: 100.5vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.842);
+}
+
+.popupImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.popupImage > img {
+  z-index: 300 !important;
+  width: 90vw;
+  align-self: center;
+  justify-self: center;
+  -webkit-box-shadow: 3px 0px 19px -3px rgb(71, 70, 70);
+  -moz-box-shadow: 3px 0px 19px -3px rgb(71, 70, 70);
+  box-shadow: 3px 0px 19px -3px rgb(71, 70, 70);
+}
+
+.imageClosingButton {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  background-color: rgba(240, 248, 255, 0.301);
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images > .next_prev {
+  bottom: 1vh;
+}

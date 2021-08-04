@@ -1,0 +1,48 @@
+.popupVideoParent {
+  transition: all 0.5s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.596);
+}
+
+.popupVideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.popupVideo > iframe {
+  z-index: 300 !important;
+  width: 100vw;
+  align-self: center;
+  justify-self: center;
+  -webkit-box-shadow: 3px 0px 19px -3px rgb(71, 70, 70);
+  -moz-box-shadow: 3px 0px 19px -3px rgb(71, 70, 70);
+  box-shadow: 3px 0px 19px -3px rgb(71, 70, 70);
+}
+
+.imageClosingButton {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  background-color: rgba(240, 248, 255, 0.301);
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

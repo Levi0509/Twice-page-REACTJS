@@ -1,0 +1,45 @@
+.home_contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 21%;
+  right: 5%;
+  color: white;
+  text-align: right;
+  z-index: 10;
+  line-height: 5px;
+  border-width: 50%;
+}
+.content > h1 {
+  font-size: 3rem;
+  font-family: "Satisfy", cursive;
+  letter-spacing: 1px;
+  font-weight: 500 !important;
+}
+.content > h2 {
+  font-size: 2.5rem;
+  font-weight: 500 !important;
+  font-family: "Zen Loop", cursive;
+}
+.line {
+  background-color: white;
+  width: 55%;
+  height: 1px;
+  margin-top: 30px;
+}
+
+.home_contents > .social_icons {
+  z-index: 10;
+  position: relative;
+  bottom: 9vh;
+}

@@ -1,0 +1,255 @@
+.header {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.048);
+  height: 9.5vh;
+  width: 100vw;
+  z-index: 50 !important;
+}
+
+.main_header {
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  width: 99%;
+  border-radius: 0 0 15px 15px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 500 !important;
+}
+.header_logo > a > img {
+  animation: Pulse 2s infinite;
+}
+.header_logo,
+.header_logo > a > img {
+  width: 12vw;
+  height: 12vw;
+  margin: 2px 0 4px 6px;
+  border-radius: 50%;
+  z-index: 50;
+}
+.main_header > a {
+  z-index: 50;
+}
+
+#nav {
+  height: 9vw;
+  width: 7vw;
+  background-color: rgba(88, 9, 9, 0);
+  margin-right: 20px;
+  margin-top: 10%;
+  float: right;
+  z-index: 500;
+  transform: rotateY(180deg);
+}
+.line_1,
+.line_2,
+.line_3,
+.cross_1,
+.cross_2 {
+  z-index: 50;
+}
+.line_1 {
+  width: 100%;
+  height: 8%;
+  margin: 17%;
+}
+.line_2 {
+  width: 80%;
+  height: 8%;
+  margin: 17%;
+}
+.line_3 {
+  width: 60%;
+  height: 8%;
+  margin: 17%;
+}
+.nav_components > .line_1,
+.nav_components > .line_2,
+.nav_components > .line_3 {
+  background-color: rgb(0, 0, 0);
+}
+.nav_component > .line_1,
+.nav_component > .line_2,
+.nav_component > .line_3 {
+  background-color: rgb(255, 255, 255);
+}
+.cross_3 {
+  display: none;
+}
+.cross_2 {
+  margin-top: -4px;
+  transform-origin: center;
+  transform: rotate(45deg);
+  background-color: white;
+  width: 100%;
+  height: 10%;
+}
+.cross_1 {
+  margin-top: 17px;
+  transform-origin: center;
+  transform: rotate(135deg);
+  background-color: white;
+  width: 100%;
+  height: 10%;
+}
+
+.header_option {
+  /* overflow: hidden !important; */
+  position: absolute;
+  z-index: -200;
+  top: -150vh;
+  left: -50vw;
+  border-radius: 80%;
+  height: 10vw;
+  width: 10vw;
+  transition: 0.4s;
+}
+
+.header_options {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  animation: NavGrow 0.1s linear;
+  z-index: 25;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+ul {
+  text-align: left;
+  padding: 0;
+  margin: 1.5vh;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.2rem;
+  font-weight: 10 !important;
+}
+
+ul > a:hover {
+  letter-spacing: 5px;
+}
+
+.header_option a {
+  display: none;
+}
+
+li > ul,
+li > ul > a {
+  text-decoration: none;
+  color: white;
+  z-index: 10;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  bottom: 11vh;
+  margin-top: 30px;
+  margin-left: 0px;
+  z-index: 10;
+}
+
+li > ul > a > img {
+  height: 25px;
+  width: 25px;
+}
+@keyframes NavGrow {
+  0% {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    height: 20vw;
+    width: 20vw;
+  }
+  25% {
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    height: 20vw;
+    width: 20vw;
+  }
+  50% {
+    position: absolute;
+    opacity: 0.4;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    height: 80vw;
+    width: 80vw;
+  }
+  60% {
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    height: 85vw;
+    width: 85vw;
+  }
+  70% {
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    height: 90vw;
+    width: 90vw;
+  }
+  80% {
+    position: absolute;
+    opacity: 0.7;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    height: 100vw;
+    width: 100vw;
+  }
+  90% {
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    height: 110vw;
+    width: 110vw;
+  }
+  95% {
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    height: 130vw;
+    width: 120vw;
+  }
+  100% {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    height: 100vh;
+    width: 100vw;
+  }
+}

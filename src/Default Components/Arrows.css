@@ -1,0 +1,49 @@
+.ArrowBox,
+.ArrowBox2 {
+  z-index: 10000;
+  margin: 0 20px;
+  transform: rotate(180deg);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px !important;
+  background-color: rgba(240, 255, 255, 0.479);
+  border-radius: 50%;
+  animation: Pulse 3s infinite linear;
+}
+.ArrowBox2 {
+  transform: rotate(0deg);
+}
+
+.ArrowBox > a,
+.ArrowBox2 > a {
+  display: flex;
+  flex-direction: row;
+  color: aliceblue;
+}
+
+.ArrowBox > a > .material-icons,
+.ArrowBox2 > a > .material-icons {
+  font-size: 2rem;
+}
+#Arrow1 {
+  margin-right: -20px;
+}
+
+.ArrowBox > .location,
+.ArrowBox2 > .location {
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 12vh;
+  color: whitesmoke;
+  font-size: 1.1rem;
+  font-family: Raleway;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.ArrowBox2 > .location {
+  transform: rotate(0deg);
+}

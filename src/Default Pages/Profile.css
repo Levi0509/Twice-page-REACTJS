@@ -1,0 +1,156 @@
+.profilePage {
+  width: 200vw;
+  display: flex;
+  flex-direction: row;
+  scroll-behavior: smooth !important;
+  overflow: hidden;
+}
+#ProfilePage {
+  scroll-snap-align: start;
+}
+.profileImage > img {
+  width: 100vw;
+  height: 100vh;
+  z-index: -5;
+  object-fit: cover;
+}
+.profileImage > .mask {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(7, 7, 7, 0.568);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileContent,
+.memberContent {
+  z-index: 5;
+  height: 95vh;
+  width: 98vw;
+  border: 3px solid white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.toRead {
+  position: absolute;
+  top: 12vh;
+  left: 12vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: "Hahmlet", serif;
+  text-align: left;
+  width: 50vw;
+}
+
+.toRead > span {
+  width: 40vw;
+}
+.toRead > span > a:visited {
+  color: rgb(255, 51, 0);
+}
+.toread > span > a {
+  color: rgb(255, 0, 234);
+}
+
+.nameBig {
+  font-size: 6rem;
+  color: white;
+  letter-spacing: 10px;
+}
+.Awards {
+  position: relative;
+  top: 6vh;
+  left: -15vw;
+  display: flex;
+  width: 310px;
+  flex-direction: column;
+  justify-content: flex-start;
+  opacity: 0.9;
+}
+.Awards > h3 {
+  color: #fff;
+  font-size: 1.7rem;
+  font-family: raleway, sans-serif;
+  text-decoration: underline;
+  font-weight: 300;
+}
+.awardTiles {
+  display: flex;
+  flex-direction: row;
+}
+.awardName {
+  color: whitesmoke;
+  position: relative;
+  margin-top: 20px;
+  text-align: left;
+}
+.awardName > span {
+  width: 240px;
+}
+
+.awardTiles > img {
+  height: 70px;
+  width: 70px;
+  border-radius: 15px;
+  margin: 10px;
+  filter: drop-shadow(5px 5px 15px rgba(255, 255, 255, 0.603));
+  transition: transform 0.4s linear;
+}
+.awardTiles > img:hover {
+  transform: scale(1.02) rotate(-10deg);
+  transition: transform 0.4s linear;
+}
+
+.profilePage > .social_icons {
+  position: fixed;
+  bottom: 3vh;
+  left: -5vw;
+  width: 30vw;
+}
+.profilePage > .social_icons > .social > a {
+  margin: 0 1.5vw;
+}
+.profilePage > .social_icons > .social > a,
+.profilePage > .social_icons > .social > a > img {
+  height: 25px;
+  width: 25px;
+}
+
+.profilePage > .social_icons > .social > a:hover {
+  transition: transform 0.5s ease-in;
+  transform: scale(1.2);
+}
+
+#MemberPage {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.memberProImg > img {
+  z-index: -10 !important;
+  filter: blur(12px);
+}
+.proImage > img {
+  filter: drop-shadow(10px 0 0 0);
+}
+@keyframes Rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}

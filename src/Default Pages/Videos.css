@@ -1,0 +1,134 @@
+.Videoss {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000 !important;
+}
+.Videoss > .BaseTitle {
+  z-index: 1;
+  top: 70vh;
+}
+.videoPage {
+  display: grid;
+  max-width: 100vw;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+  column-gap: 10px;
+  row-gap: 10px;
+  line-height: 10px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 3;
+  column-gap: 10px;
+  margin-left: 20px;
+  margin-top: -20vh;
+}
+.videoPage > a > img,
+.videoPage > a {
+  width: 30vw;
+  margin: 20px 0;
+  border-radius: 20px 0;
+  opacity: 0.9;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.videoPage > a > img {
+  height: 100%;
+  margin: 0;
+}
+.videoPage > a {
+  width: 30vw;
+  border: 3px rgba(255, 255, 255, 0.521) solid;
+  z-index: 12;
+  transition: transform 1s linear;
+}
+
+.videoPage > a:hover {
+  transform: scale(1.02) !important;
+  transition: transform 0.7s linear;
+}
+.VidPageTitle {
+  position: relative;
+  top: -24vh;
+  margin-top: 9vh;
+  font-size: 4rem;
+  font-family: "Zen Loop", cursive;
+  color: #fff;
+  letter-spacing: 6px;
+}
+
+.videoPage > .popupVideoParent {
+  transition: all 0.5s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.774);
+}
+
+.videoPage > .popupVideoParent > .popupVideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.videoPage > .popupVideoParent > .popupVideo > iframe {
+  z-index: 300 !important;
+  height: 90vh;
+  width: 60vw;
+  align-self: center;
+  justify-self: center;
+  -webkit-box-shadow: 3px 0px 19px -3px rgb(71, 70, 70);
+  -moz-box-shadow: 3px 0px 19px -3px rgb(71, 70, 70);
+  box-shadow: 3px 0px 19px -3px rgb(71, 70, 70);
+}
+
+.videoPage > .popupVideoParent > .popupVideo > .imageClosingButton {
+  position: absolute;
+  right: 60px;
+  top: 40px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  background-color: rgba(240, 248, 255, 0.301);
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.videoPage > .popupVideoParent > .popupVideo > .imageClosingButton:hover {
+  transition: transform 0.3s linear;
+  animation: Jiggle 0.3s 2;
+}
+
+@keyframes Jiggle {
+  0% {
+    transform: translate(-1px, -1px);
+  }
+  25% {
+    transform: translate(1px, -1px);
+  }
+  50% {
+    transform: translate(-1px, 1px);
+  }
+  100% {
+    transform: translate(1px, 1px);
+  }
+}
+
+.videoPage > .Details {
+  top: 20vh;
+}

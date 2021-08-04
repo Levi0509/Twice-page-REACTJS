@@ -1,0 +1,38 @@
+.next_prev {
+  align-self: center !important;
+  position: relative;
+  bottom: -10vh;
+  height: 13vh;
+  width: 50vw;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col > #btn,
+.col > #btn_none {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(184, 165, 202, 0.315);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+#btn_none {
+  pointer-events: none;
+  opacity: 0.2;
+}
+.p_index {
+  font-family: Raleway;
+  border-bottom: 20px;
+}

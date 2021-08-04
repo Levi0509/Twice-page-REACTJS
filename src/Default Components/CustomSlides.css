@@ -1,0 +1,124 @@
+.SlidesTrg {
+  width: 75vw !important;
+  height: 100vh !important;
+  display: flex;
+  overflow: hidden !important;
+  z-index: 1000 !important;
+}
+.SlidesTrg > .data > img {
+  position: absolute;
+  right: 20vw;
+  width: auto;
+  height: 100%;
+}
+
+.Ribbon {
+  position: fixed;
+  width: 110vw;
+  height: 75vh;
+  background-color: rgba(29, 28, 28, 0.623);
+  transform: rotate(55deg);
+  margin-left: -65vh;
+  z-index: 3000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1 !important;
+}
+
+.Ribbon > img {
+  height: 350px;
+  width: 350px;
+  transform: rotate(-55deg);
+  margin-left: -10vh;
+  opacity: 0.18;
+  z-index: -1 !important;
+}
+
+.lineBold {
+  position: relative;
+  top: 3vh;
+  left: 0vw;
+  width: 15vw;
+  height: 4px;
+  background-color: orange;
+}
+.NameMain {
+  position: relative;
+  width: 40vw;
+  top: 15vh;
+  left: 7vw;
+  font-size: 1.8rem;
+  font-family: "Hahmlet";
+  text-align: left;
+}
+.data {
+  color: rgb(255, 255, 255);
+  z-index: 100 !important;
+}
+
+.Abt {
+  width: 30vw;
+  padding: 40px 20px 40px 60px;
+  position: relative;
+  top: 15vh;
+  left: 7vw;
+  background-color: rgba(26, 23, 23, 0.781);
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.float {
+  opacity: 0.2;
+  width: 30vw;
+  height: 10vh;
+  position: relative;
+  bottom: -80vh;
+  left: -20vw;
+  display: flex;
+  flex-direction: column;
+  animation: Float 20s linear alternate infinite;
+  color: whitesmoke;
+}
+.roleSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+.role {
+  padding: 0 0 2px 12px;
+}
+.roleSection > .material-icons {
+  letter-spacing: -17px;
+  font-size: 1.5rem;
+}
+
+.nameShort {
+  font-size: 3.5rem;
+  margin-top: -16px;
+  letter-spacing: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.SlidesTrg > .data > img {
+  animation: Float2 10s linear alternate-reverse infinite;
+}
+
+@keyframes Float {
+  from {
+    transform: translateX(-20%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes Float2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-10%);
+  }
+}

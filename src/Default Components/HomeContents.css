@@ -1,0 +1,87 @@
+.homeContents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+}
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 23%;
+  right: 8%;
+  color: white;
+  text-align: right;
+  z-index: 10;
+  line-height: 5px;
+  border-width: 50%;
+}
+.Content > h1 {
+  font-size: 4rem;
+  font-family: "Satisfy", cursive;
+  letter-spacing: 5px;
+  font-weight: 500 !important;
+}
+.Content > h2 {
+  font-size: 3rem;
+  font-weight: 500 !important;
+  font-family: "Zen Loop", cursive;
+}
+.line {
+  background-color: white;
+  width: 55%;
+  height: 1px;
+  margin-top: 30px;
+}
+
+.homeContents > .social_icons {
+  z-index: 10;
+  position: absolute;
+  bottom: 5vh;
+  width: 40vw;
+}
+.homeContents > .social_icons > .social {
+  height: 50px;
+}
+.homeContents > .social_icons > .social > a > img {
+  height: 25px !important;
+  padding: 0 20px;
+}
+.homeContents > .social_icons > .social > a > img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s linear;
+}
+
+.Content > .button_1 {
+  margin-top: 20px;
+  width: 30%;
+  height: 6vh;
+  border-radius: 50px;
+}
+.Content > .button_1 > a > .button_a {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: all 1s linear;
+  background-color: rgba(232, 233, 173, 0.233);
+}
+
+.Content > .button_1 > a > .button_a:hover {
+  animation: Wiggle 0.1s 6 alternate;
+  color: rgb(228, 138, 138);
+  background-color: rgba(138, 132, 214, 0.692);
+  transition: all 1s linear;
+}
+
+@keyframes Wiggle {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}

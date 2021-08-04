@@ -1,0 +1,81 @@
+.character_card {
+  margin: 40px 25vw 40px 0;
+  height: 44vh;
+  width: 100%;
+}
+.image > img {
+  position: relative;
+  top: -3vh;
+  height: 75vh;
+  width: 85vw;
+  margin-left: 2.5vw;
+  border-radius: 0 20px 0 20px;
+}
+.details_none {
+  display: none;
+}
+.details {
+  position: relative;
+  top: -25vh;
+  right: 1vw;
+  width: 110%;
+  height: 28vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 25% 100%);
+  background-color: rgba(238, 238, 228, 0);
+  font-family: Raleway;
+}
+.name_box {
+  margin-top: 17px;
+  height: 7.5vh;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  font-family: "Zen Loop", cursive;
+  font-size: 1.5rem;
+  font-weight: 800 !important;
+  letter-spacing: 3px;
+  color: white;
+  align-items: center;
+  background-color: rgba(231, 143, 158, 0.829);
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 19% 100%);
+}
+.age_box > span {
+  margin: 0 0 5px 70px;
+  color: white;
+}
+.age_box {
+  position: relative;
+  top: -6vh;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-end;
+  justify-content: flex-end;
+  height: 15vh;
+  width: 90%;
+  background-color: rgba(53, 49, 49, 0.616);
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 25% 100%);
+}
+.index {
+  position: absolute;
+  bottom: 0.5vh;
+  right: 10vw;
+  padding: 5px 10px 8px 10px;
+  border-radius: 50px;
+  border: 1px double rgba(165, 163, 163, 0.527);
+  background-color: rgba(0, 0, 0, 0);
+}
+.index > b {
+  position: relative;
+  top: -1vh;
+  margin-right: 5px;
+  padding-top: 2px;
+}
+.index > small {
+  position: relative;
+  bottom: -0.7vh;
+}

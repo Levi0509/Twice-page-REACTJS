@@ -1,0 +1,20 @@
+.button_a {
+  background-color: rgba(197, 197, 188, 0.212);
+  border-radius: 10px;
+  border: 1.5px solid white;
+  height: 30px;
+  width: 100px;
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/* .button_a::before {
+  background-color: pink;
+} */
+
+.button_1 > a {
+  text-decoration: none;
+  color: white;
+}

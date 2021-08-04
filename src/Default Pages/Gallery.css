@@ -1,0 +1,89 @@
+@font-face {
+  font-family: minerva;
+  src: url(https://assets.codepen.io/1651485/Moniqa-BlackHeading.otf)
+    format("opentype");
+}
+
+.awesomeGallery {
+  background-color: #000;
+  font-size: 30px;
+  min-height: 100vh;
+  user-select: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "minerva", sans-serif;
+  color: #fff;
+  z-index: 100 !important;
+}
+
+image {
+  position: absolute;
+  pointer-events: none;
+  height: 300px;
+  width: 200px;
+  object-position: center !important;
+  transition: all 0.6s ease;
+  background-size: cover;
+  z-index: 30 !important;
+}
+
+.baseTitle {
+  font-size: 22rem;
+  letter-spacing: 4rem;
+  z-index: 40;
+  opacity: 0.7;
+  -webkit-text-stroke: 2px;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: difference;
+  transition: all 0.5s linear;
+  margin: 0;
+  margin-left: -10vw;
+  /* filter: url(#filth); */
+}
+
+.messageText {
+  position: absolute;
+  opacity: 0.2;
+  bottom: 4vh;
+  right: 15vw;
+  font-size: 5rem;
+  position: absolute;
+  font-size: 8rem;
+  margin: 0;
+}
+
+.forMore {
+  position: absolute;
+  border: 1px solid #fff;
+  bottom: 10vh;
+  right: 3vw;
+  background-color: rgba(3, 3, 3, 0.582);
+  cursor: pointer;
+  z-index: 40 !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 6vh;
+  border-radius: 30px;
+  transition: transform 1s linear;
+  color: #fff;
+}
+.forMore > span {
+  font-size: 1.7rem;
+  margin-right: 5px;
+}
+.forMore > .material-icons {
+  margin-left: 5px;
+  margin-right: -4px;
+}
+.forMore:hover {
+  transform: scale(1.1);
+  transition: transform 1s linear;
+}
+.forMore:hover .material-icons {
+  animation: Float 1s infinite alternate-reverse;
+}

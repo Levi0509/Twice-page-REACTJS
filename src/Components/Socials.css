@@ -1,0 +1,16 @@
+.social_icons {
+  width: 50%;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.social > a > img {
+  height: 25px;
+  border-radius: 20%;
+  padding: 0 0 0 20px;
+}

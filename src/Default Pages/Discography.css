@@ -1,0 +1,225 @@
+.disc {
+  /* background: -webkit-linear-gradient(
+    to left,
+    #afe6f0,
+    #ebd2f1,
+    #cbf1c4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to left, #afe6f0, #ebd2f1, #cbf1c4); */
+  background-color: #000;
+  height: 110vh;
+  width: 100%;
+  margin-top: -6vh;
+}
+.disc > h1 {
+  position: relative;
+  top: 4vh;
+  font-size: 4rem;
+  color: rgb(255, 254, 254);
+  font-family: "Zen Loop", cursive;
+  letter-spacing: 6px;
+}
+
+.boxes > ul {
+  display: block;
+  width: 100%;
+  height: inherit;
+}
+.boxes > ul {
+  list-style-type: none;
+}
+.boxes > ul > li:nth-child(1) {
+  position: absolute;
+  left: 10%;
+  height: 30px;
+  width: 30px;
+  background: rgba(208, 91, 231, 0.404);
+}
+.boxes > ul > li:nth-child(2) {
+  position: absolute;
+  left: 30%;
+  height: 45px;
+  width: 45px;
+  animation-duration: 25s;
+  background: rgba(211, 46, 46, 0.418);
+}
+.boxes > ul > li:nth-child(3) {
+  position: absolute;
+  left: 50%;
+  height: 20px;
+  width: 20px;
+  animation-duration: 60s;
+  background: rgba(55, 209, 171, 0.445);
+}
+.boxes > ul > li:nth-child(4) {
+  position: absolute;
+  left: 80%;
+  height: 20px;
+  width: 20px;
+  animation-duration: 5s;
+  background: rgba(63, 51, 224, 0.418);
+}
+.boxes > ul > li:nth-child(5) {
+  position: absolute;
+  left: 15%;
+  height: 15px;
+  width: 15px;
+  animation-delay: 2s;
+  animation-duration: 10s;
+  background: rgb(202, 183, 206);
+}
+.boxes > ul > li:nth-child(6) {
+  position: absolute;
+  left: 47%;
+  height: 25px;
+  width: 25px;
+  animation-delay: 5s;
+  animation-duration: 40s;
+  background: rgba(45, 236, 147, 0.5);
+}
+.boxes > ul > li:nth-child(7) {
+  position: absolute;
+  left: 56%;
+  height: 70px;
+  width: 70px;
+  animation-delay: 1s;
+  animation-duration: 15s;
+  background: rgba(55, 209, 171, 0.445);
+}
+.boxes > ul > li:nth-child(8) {
+  position: absolute;
+  left: 92%;
+  height: 20px;
+  width: 20px;
+  animation-delay: 3s;
+  animation-duration: 30s;
+  background: rgba(230, 147, 40, 0.418);
+}
+.boxes > ul > li {
+  animation: animate 20s linear 1s infinite;
+}
+.albumContent {
+  position: absolute;
+  top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+.albumRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.albumHive {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  margin: 0 0;
+  transform: translateY(80px);
+  padding: 0;
+  height: auto;
+}
+
+.hiveCell {
+  flex: 0 1 250px;
+  width: 25vh;
+  height: 27vh;
+  margin: 20px;
+  position: relative;
+  text-align: center;
+  z-index: 1000 !important;
+  box-shadow: 0px 0px 15px 0px rgba(2px, 1px, 1px, 0.8);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  cursor: pointer;
+  border: 1px black solid;
+  background-color: rgb(190, 199, 199);
+  transition: all 0.3s ease-in-out;
+}
+
+.hiveCellImg {
+  object-fit: contain;
+  object-position: center;
+}
+
+.hiveCellText {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-weight: 1000;
+  font-family: "Zen loop";
+  font-size: 2.3rem;
+  transition: opacity 350ms;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.hiveCell::before,
+.hiveCell::after,
+.hiveCellImg {
+  top: -50%;
+  width: 100%;
+  height: 200%;
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.582);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: -1;
+}
+
+.hiveCell:hover {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.4);
+  z-index: 99;
+  overflow: hidden;
+}
+.hiveCell::before {
+  content: "";
+  position: absolute;
+  opacity: 0.4;
+  width: 350px;
+  height: 70px;
+  background-color: white;
+  top: 50;
+  left: 0;
+  z-index: 1;
+  transform: rotate(45deg);
+  transition: transform 0.5s;
+}
+
+.hiveCell:hover::before {
+  transform: translate(-100px, 600%) rotateX(85deg);
+  transition: transform 0.5s;
+}
+.albumrow1 {
+  position: relative;
+  top: -3vh;
+  left: 10vw;
+}
+.albumrow2 {
+  position: relative;
+  top: -8vh;
+  left: 3vw;
+}
+.albumrow3 {
+  position: relative;
+  top: -12vh;
+  left: 10.5vw;
+}
+/* .albumrow3 > .hiveCell {
+  margin: -20px !important;
+} */
+
+@keyframes animate {
+  from {
+    transform: translateY(100vh) rotate(180deg);
+  }
+  to {
+    transform: translateY(-15vh) rotate(360deg);
+  }
+}

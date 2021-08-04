@@ -1,0 +1,33 @@
+.Details {
+  position: fixed;
+  right: 8vw;
+  writing-mode: vertical-rl;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Details > .number > h3,
+.Details > .Name {
+  color: white;
+  margin: 40px 1px;
+}
+.Details > .number > h3 > span {
+  margin: 15px 0;
+  font-family: Raleway;
+  font-size: 1.4rem;
+}
+.Details > .Name > h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 20px 5px;
+  font-family: "Chakra Petch", sans-serif;
+  letter-spacing: 4px;
+}
+.Details > .Line {
+  transform: rotate(90deg);
+  height: 2px;
+  margin: 30px 0;
+  width: 18vh;
+  background-color: rgb(255, 255, 255);
+}

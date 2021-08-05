@@ -8,7 +8,7 @@ export default function DefDiscography() {
   //     alert(`{You will be redirected to ${link}}`);
   //     window.location.assign(link);
   //   }
-  window.onload = function () {
+   window.onload = function () {
     if (window.innerWidth < 415) {
       window.location.href = "/Mobile/Discography/page-1";
     }

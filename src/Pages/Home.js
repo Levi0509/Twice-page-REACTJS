@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import "../Components/Sidebar.css";
 import Background from "../Components/Background";
 import HomeContent from "../Components/HomeContent";
 import Mask from "../Components/Mask";

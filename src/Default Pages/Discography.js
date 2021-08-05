@@ -8,6 +8,12 @@ export default function DefDiscography() {
   //     alert(`{You will be redirected to ${link}}`);
   //     window.location.assign(link);
   //   }
+  window.onload = function () {
+    if (window.innerWidth < 415) {
+      window.location.href = "/Mobile/Discography/page-1";
+    }
+  };
+
   const albumUrlArray = [
     "gVT7wPD/Album1",
     "gTXXF81/Album2",

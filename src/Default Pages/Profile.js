@@ -66,6 +66,11 @@ https://i.ibb.co/ */
       popImageUrl: "",
     };
   }
+  handlePage = () => {
+    if (window.innerWidth < 415) {
+      window.location.href = "/Mobile/Profile";
+    }
+  };
 
   handleRotate = () => {
     this.nextRef.current.rotateArrows();
@@ -90,7 +95,7 @@ https://i.ibb.co/ */
     });
 
     return (
-      <div className="profilePage">
+      <div className="profilePage" onLoad={this.handlePage}>
         <div
           className="profileImage proImage"
           id="ProfilePage"

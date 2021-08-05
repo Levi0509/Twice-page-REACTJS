@@ -30,6 +30,11 @@ export default class DefVideos extends Component {
       popVideoId: "",
     };
   }
+  handlePage = () => {
+    if (window.innerWidth < 415) {
+      window.location.href = "/Mobile/Videos";
+    }
+  };
 
   handleVideo = (videoId) => {
     this.setState({

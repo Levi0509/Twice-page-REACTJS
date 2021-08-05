@@ -109,6 +109,11 @@ export default class GalleryBoring extends Component {
   //     imageUrl: e.target.value,
   //   });
   // };
+  handlePage = () => {
+    if (window.innerWidth < 415) {
+      window.location.href = "/Mobile/Gallery/page-1";
+    }
+  };
 
   handlePopup = (url) => {
     this.setState({
@@ -132,7 +137,7 @@ export default class GalleryBoring extends Component {
       );
     });
     return (
-      <div className="IMAGES">
+      <div className="IMAGES" onLoad={this.handlePage}>
         <svg>
           <filter id="filth">
             <feTurbulence

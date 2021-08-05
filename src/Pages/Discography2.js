@@ -5,6 +5,12 @@ import NextPrev from "../Components/NextPrev.js";
 import "./Discography.css";
 
 export default function Discography2() {
+  window.onload = function () {
+    if (window.innerWidth > 415) {
+      window.location.href = "/Default/Discography";
+    }
+  };
+
   return (
     <div className="ALBUM">
       <div className="album_page">

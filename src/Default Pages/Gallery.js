@@ -8,6 +8,12 @@ export default function DefGallery() {
   function goTo(To) {
     window.location.assign(To);
   }
+  window.onload = function () {
+    if (window.innerWidth < 415) {
+      window.location.href = "/Mobile/Gallery/page-1";
+    }
+  };
+
   let count = 0,
     count2 = 0;
 
